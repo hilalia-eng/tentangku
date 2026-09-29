@@ -1,268 +1,85 @@
-```css
-/* =========================
-   DASAR
-========================= */
-
-* {
+*,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    background: #e4ead9;
-    color: #514c48;
-    line-height: 1.7;
+    background-color: pink;
+    height: 100vh;
 }
 
-/* =========================
-   CONTAINER UTAMA
-========================= */
-
-.container {
-    width: 92%;
-    max-width: 950px;
-    margin: 35px auto;
-    background: #fffaf2;
-    padding: 25px;
-    border-radius: 30px;
-    box-shadow: 0 12px 35px rgba(90, 80, 70, 0.15);
+.container-navbar {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100px;
 }
 
-/* =========================
-   PROFIL
-========================= */
-
-.profile {
-    position: relative;
-    text-align: center;
-    padding: 40px 20px;
-    background: #f7dce0;
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-/* hiasan */
-
-.profile::before {
-    content: "♡";
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    font-size: 35px;
-    color: #c68f99;
-}
-
-.profile::after {
-    content: "✿";
-    position: absolute;
-    bottom: 15px;
-    right: 40px;
-    font-size: 35px;
-    color: #9aaa8b;
-}
-
-/* foto */
-
-.profile img {
-    width: 145px;
-    height: 145px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 7px solid #fffaf2;
-    box-shadow: 0 7px 18px rgba(90, 80, 70, 0.2);
-}
-
-.profile h1 {
-    margin-top: 15px;
-    font-size: 40px;
-    color: #55534d;
-}
-
-.profile p {
-    font-size: 18px;
-    color: #756c66;
-}
-
-/* =========================
-   SECTION
-========================= */
-
-section {
-    margin-top: 25px;
-    padding: 25px;
-    background: #fffdf8;
-    border-radius: 22px;
-    border: 2px solid #eee3d8;
-    box-shadow: 0 5px 15px rgba(100, 90, 80, 0.07);
-}
-
-/* Judul */
-
-h2 {
-    display: inline-block;
-    margin-bottom: 18px;
-    padding: 8px 22px;
-    border-radius: 30px;
-    background: #dce6d3;
-    color: #596651;
-    font-size: 22px;
-}
-
-/* =========================
-   TENTANG SAYA
-========================= */
-
-section > p {
-    background: #faf0e7;
-    padding: 20px;
-    border-radius: 17px;
-}
-
-/* =========================
-   CARD
-========================= */
-
-.card {
-    background: #faf0e7;
-    padding: 20px;
-    margin-bottom: 12px;
-    border-radius: 17px;
-    border-left: 6px solid #d49ba5;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 7px 18px rgba(100, 90, 80, 0.1);
-}
-
-.card h3 {
-    color: #8e626b;
-    margin-bottom: 5px;
-}
-
-/* =========================
-   KEAHLIAN
-========================= */
-
-.skills {
+.ul-navbar {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skills span {
-    padding: 10px 18px;
-    border-radius: 25px;
-    background: #e0ead9;
-    color: #596651;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.skills span:nth-child(even) {
-    background: #f4dce0;
-    color: #8e626b;
-}
-
-.skills span:hover {
-    transform: scale(1.05);
-}
-
-/* =========================
-   KONTAK
-========================= */
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
+    height: 100px;
     justify-content: center;
-    gap: 13px;
+    align-items: center;
 }
 
-.contact a {
+.li-navbar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.li-navbar:hover {
+    background-color: plum;
+    transition: .5s ease-in-out;
+    transition-delay: .2s;
+    border-radius: 8px;
+}
+
+.a-navbar {
+    color: black;
     text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 15px;
-    color: #514c48;
-    font-weight: bold;
-    background: #dfe8d8;
-    transition: 0.3s;
+    font-weight: 800;
 }
 
-.contact a:nth-child(2) {
-    background: #f4d9de;
+.countainer-content {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact a:nth-child(3) {
-    background: #f8eadc;
+.a-content {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.contact a:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(90, 80, 70, 0.15);
+.img-content {
+    width: 30%;
+    height: 50%;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    margin-top: 30px;
-    padding: 25px;
-    text-align: center;
-    background: #dce6d3;
-    border-radius: 20px;
-    color: #596651;
-    font-size: 14px;
+.container-footer {
+    height: 10vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* =========================
-   RESPONSIVE HP
-========================= */
-
-@media (max-width: 600px) {
-
-    .container {
-        width: 95%;
-        padding: 15px;
-        margin: 15px auto;
-    }
-
-    .profile {
-        padding: 30px 15px;
-    }
-
-    .profile img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .profile h1 {
-        font-size: 30px;
-    }
-
-    .profile p {
-        font-size: 15px;
-    }
-
-    section {
-        padding: 18px;
-    }
-
-    h2 {
-        font-size: 19px;
-    }
-
-    .contact {
-        flex-direction: column;
-    }
-
-    .contact a {
-        width: 100%;
-        text-align: center;
-    }
+.h1-footer {
+    font-size: 40px;
 }
-```
