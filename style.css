@@ -1,0 +1,268 @@
+```css
+/* =========================
+   DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: #e4ead9;
+    color: #514c48;
+    line-height: 1.7;
+}
+
+/* =========================
+   CONTAINER UTAMA
+========================= */
+
+.container {
+    width: 92%;
+    max-width: 950px;
+    margin: 35px auto;
+    background: #fffaf2;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(90, 80, 70, 0.15);
+}
+
+/* =========================
+   PROFIL
+========================= */
+
+.profile {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f7dce0;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* hiasan */
+
+.profile::before {
+    content: "♡";
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 35px;
+    color: #c68f99;
+}
+
+.profile::after {
+    content: "✿";
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    font-size: 35px;
+    color: #9aaa8b;
+}
+
+/* foto */
+
+.profile img {
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #fffaf2;
+    box-shadow: 0 7px 18px rgba(90, 80, 70, 0.2);
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #55534d;
+}
+
+.profile p {
+    font-size: 18px;
+    color: #756c66;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    margin-top: 25px;
+    padding: 25px;
+    background: #fffdf8;
+    border-radius: 22px;
+    border: 2px solid #eee3d8;
+    box-shadow: 0 5px 15px rgba(100, 90, 80, 0.07);
+}
+
+/* Judul */
+
+h2 {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 22px;
+    border-radius: 30px;
+    background: #dce6d3;
+    color: #596651;
+    font-size: 22px;
+}
+
+/* =========================
+   TENTANG SAYA
+========================= */
+
+section > p {
+    background: #faf0e7;
+    padding: 20px;
+    border-radius: 17px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: #faf0e7;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 17px;
+    border-left: 6px solid #d49ba5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(100, 90, 80, 0.1);
+}
+
+.card h3 {
+    color: #8e626b;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   KEAHLIAN
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: #e0ead9;
+    color: #596651;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills span:nth-child(even) {
+    background: #f4dce0;
+    color: #8e626b;
+}
+
+.skills span:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   KONTAK
+========================= */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+}
+
+.contact a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 15px;
+    color: #514c48;
+    font-weight: bold;
+    background: #dfe8d8;
+    transition: 0.3s;
+}
+
+.contact a:nth-child(2) {
+    background: #f4d9de;
+}
+
+.contact a:nth-child(3) {
+    background: #f8eadc;
+}
+
+.contact a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(90, 80, 70, 0.15);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    background: #dce6d3;
+    border-radius: 20px;
+    color: #596651;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .profile {
+        padding: 30px 15px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile h1 {
+        font-size: 30px;
+    }
+
+    .profile p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact a {
+        width: 100%;
+        text-align: center;
+    }
+}
+```
